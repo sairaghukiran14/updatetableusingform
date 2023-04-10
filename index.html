@@ -4,95 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagination</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+    <link rel="stylesheet" href="cascade.css" />
   </head>
   <body>
-    <main>
-      <h1>Pagination with Vanilla JavaScript</h1>
-      <ul id="paginated-list" data-current-page="1" aria-live="polite">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>Item 6</li>
-        <li>Item 7</li>
-        <li>Item 8</li>
-        <li>Item 9</li>
-        <li>Item 10</li>
-        <li>Item 11</li>
-        <li>Item 12</li>
-        <li>Item 13</li>
-        <li>Item 14</li>
-        <li>Item 15</li>
-        <li>Item 16</li>
-        <li>Item 17</li>
-        <li>Item 18</li>
-        <li>Item 19</li>
-        <li>Item 20</li>
-        <li>Item 21</li>
-        <li>Item 22</li>
-        <li>Item 23</li>
-        <li>Item 24</li>
-        <li>Item 25</li>
-        <li>Item 26</li>
-        <li>Item 27</li>
-        <li>Item 28</li>
-        <li>Item 29</li>
-        <li>Item 30</li>
-        <li>Item 31</li>
-        <li>Item 32</li>
-        <li>Item 33</li>
-        <li>Item 34</li>
-        <li>Item 35</li>
-        <li>Item 36</li>
-        <li>Item 37</li>
-        <li>Item 38</li>
-        <li>Item 39</li>
-        <li>Item 40</li>
-        <li>Item 41</li>
-        <li>Item 42</li>
-        <li>Item 43</li>
-        <li>Item 44</li>
-        <li>Item 45</li>
-        <li>Item 46</li>
-        <li>Item 47</li>
-        <li>Item 48</li>
-        <li>Item 49</li>
-        <li>Item 50</li>
-      </ul>
-
-      <nav class="pagination-container">
+    <div class="container">
+      <div class="header">Fill the Form to Update Details</div>
+      <div class="form">
+        <input type="text" id="firstname" placeholder="FirstName" required />
+        <input type="text" id="lastname" placeholder="LastName" required />
+        <input type="text" id="address" placeholder="Address" />
+        <input type="text" id="pincode" placeholder="Pincode" />
+        <label for="gender">Gender:</label>
+        <select name="" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <label for="Food">Choice of Food :</label>
+        <select name="" id="food">
+          <option value="North Indian Food">North Indian Food</option>
+          <option value="South Indian Food">South Indian Food</option>
+          <option value="Chinese Food">Chinese Food</option>
+          <option value="Italian Food">Italian Food</option>
+          <option value="Mexican Food">Mexican Food</option>
+        </select>
+        <label for="State">State :</label>
+        <select name="" id="state">
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Maharastra">Maharastra</option>
+        </select>
+        <label for="Country">Country :</label>
+        <select name="" id="country">
+          <option value="India">India</option>
+        </select>
         <button
-          class="pagination-button"
-          id="prev-button"
-          aria-label="Previous page"
-          title="Previous page"
+          class="submit"
+          type="submit"
+          name=""
+          id=""
+          onclick="addetails()"
         >
-          &lt;
+          Submit
         </button>
+      </div>
 
-        <div id="pagination-numbers"></div>
-
-        <button
-          class="pagination-button"
-          id="next-button"
-          aria-label="Next page"
-          title="Next page"
-        >
-          &gt;
-        </button>
-      </nav>
-    </main>
-
-    <footer>
-      Pen by
-      <a href="https://www.jemimaabu.com" target="_blank" rel="noopener"
-        >Jemima Abu</a
-      >
-      <span class="heart">&hearts;</span>
-    </footer>
+      <div class="tabledata">
+        <table>
+          <thead>
+            <tr>
+              <th>FirstName</th>
+              <th>LastName</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>Gender</th>
+              <th>Food</th>
+              <th>State</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Raghu</td>
+              <td>Kiran</td>
+              <td>kurnool</td>
+              <td>518002</td>
+              <td>Male</td>
+              <td>South Indian Food</td>
+              <td>Andhra Pradesh</td>
+              <td>India</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
